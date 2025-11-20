@@ -56,6 +56,7 @@ body {
     line-height: 150%;
     font-weight: bold;
     color: #C4F82A;
+    letter-spacing: 1px;
 }
 
 .card_bio {
@@ -68,7 +69,7 @@ body {
 .card_links {
     width: 279px;
     height: 289px;
-    margin: 24px;
+    margin: 24px 24px 3px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -95,6 +96,13 @@ body {
     cursor: pointer;
 }
 
+.card_footer {
+    color: #C4F82A;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+
 @media (min-width: 768px) {
     body {
         width: 100%;
@@ -117,10 +125,28 @@ body {
         margin: 24px auto;
     }
 
+    .card_name {
+        font-size: 24px;
+        line-height: 150%;        
+    }
+
+    .card_location {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 1px;
+    }
+
     .card_links {
         width: 304px;
         height: 289px;
-        margin: 24px 40px 40px;
+        margin: 24px 40px 8px;
+    }
+
+    .card_footer {
+        color: #C4F82A;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 2px;
     }
 }
 
@@ -133,10 +159,6 @@ body {
     .card {
         width: 384px;
         height: 611px;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; */
         margin: 174.5px auto;
     }
 
@@ -148,14 +170,25 @@ body {
         margin: 0 40px 24px;
     }
 
+    .card_location {
+        letter-spacing: 1px;
+    }
+
     .card_links {
         width: 304px;
         height: 289px;
-        margin: 24px 40px 40px;
+        margin: 24px 40px 8px;
     }
 
     .social:hover {
         background-color: #C4F82A;
         color: black;
+    }
+
+    .card_footer {
+        color: #C4F82A;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 2px;
     }
 }
