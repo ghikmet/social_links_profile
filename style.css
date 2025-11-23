@@ -7,19 +7,26 @@
 }
 
 body {
-    min-width: 375px;
+    max-width: 90rem;
     width: 100%;
-    max-height: 812px;
+    height:60rem;
     background-color: #141414;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    width: 327px;
-    height: 579px;
+    width: 24rem;
+    height: 38.188rem;
     background-color: #1F1F1F;
-    border-radius: 12px;
-    margin: 116.5px auto;
+    border-radius: 0.75rem;
+    margin: 0 a;
+}
+
+.card_header {
+    width: 24rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,22 +34,22 @@ body {
 }
 
 .card_picture {
-    width: 88px;
+    width: 5.5rem;
     border-radius: 50%;
-    margin: 24px 119px 0;
+    margin: 2.5rem 8.938rem 0;
 }
 
 .card_name-location {
-    width: 279px;
-    height: 61px;
+    width: 19rem;
+    height: 3.813rem;
     text-align: center;
-    margin: 24px;
+    margin: 1.5rem 2.5rem;
 }
 
 .card_name {
     width: 100%;
-    height: 36px;
-    font-size: 24px;
+    height: 2.25rem;
+    font-size: 1.5rem;
     line-height: 150%;
     color: white;
     margin-bottom: 4px;
@@ -50,8 +57,8 @@ body {
 
 .card_location {
     width: 100%;
-    height: 21px;
-    font-size: 14px;
+    height: 1.313rem;
+    font-size: 0.875rem;
     line-height: 150%;
     font-weight: bold;
     color: #C4F82A;
@@ -59,34 +66,50 @@ body {
 }
 
 .card_bio {
-    font-size: 14px;
+    width: 19rem;
+    height: 1.313rem;
+    font-size: 0.875rem;
     line-height: 150%;
     color: white;
     text-align: center;
+    margin: 0 2.5rem 1.5rem;
+}
+
+.card_main {
+    width: 24rem;
+    height: 18.063rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card_links {
-    width: 279px;
-    height: 289px;
-    margin: 24px;
+    width: 19rem;
+    height: 18.063rem;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
+
+.social:hover {
+        background-color: #C4F82A;
+        color: black;
+    }
 
 .button {
     width: 100%;
-    height: 45px;
+    height: 2.813rem;
     background-color: #333333;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .social {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 150%;
     font-weight: bold;
     color: white;
@@ -96,101 +119,52 @@ body {
 }
 
 .card_footer {
+    width: 24rem;
+    height: 2.5rem;
     color: #C4F82A;
-    font-size: 10px;
+    font-size: 0.875rem;
     line-height: 150%;
     letter-spacing: 2px;
-    margin-top: -21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 48rem) {
     body {
-        width: 100%;
-        height: 1024px;
+        width: 48rem;
+        height: 64rem;
     }
 
     .card {
-        width: 384px;
-        height: 611px;
-        margin: 206.5px auto;
-    }
-
-    .card_picture {
-        margin: 40px 143px 0;
-    }
-
-    .card_name-location {
-        width: 304px;
-        height: 61px;
-        margin: 24px auto;
-    }
-
-    .card_name {
-        font-size: 24px;
-        line-height: 150%;        
-    }
-
-    .card_location {
-        font-size: 14px;
-        line-height: 150%;
-        letter-spacing: 1px;
-    }
-
-    .card_links {
-        width: 304px;
-        height: 289px;
-        margin: 24px 40px 40px;
-    }
-
-    .card_footer {
-        color: #C4F82A;
-        font-size: 14px;
-        line-height: 150%;
-        letter-spacing: 2px;
-        margin-top: -35px;
+        width: 24rem;
+        height: 38.188rem;
     }
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 23.438rem) {
     body {
-        width: 100%;
-        height: 960px;
+        width: 23.438rem;
+        height: 50.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .card {
-        width: 384px;
-        height: 611px;
-        margin: 174.5px auto;
+        width: 20.438rem;
+        height: 36.188rem;
     }
 
-    .card_picture {
-        margin: 40px 148px 24px;
+    .card_header {
+        width: 20.438rem;
     }
 
-    .card_name-location {
-        margin: 0 40px 24px;
-    }
-
-    .card_location {
-        letter-spacing: 1px3;
-    }
-
-    .card_links {
-        width: 304px;
-        height: 289px;
-        margin: 24px 40px 40px;
-    }
-
-    .social:hover {
-        background-color: #C4F82A;
-        color: black;
+    .card_main {
+        width: 20.438rem;
     }
 
     .card_footer {
-        color: #C4F82A;
-        font-size: 12px;
-        line-height: 150%;
-        letter-spacing: 2px;
-        margin-top: -30px;
+        width: 20.438rem;
     }
 }
